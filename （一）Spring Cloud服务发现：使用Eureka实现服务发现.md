@@ -7,8 +7,11 @@ Netflix Eureka是Netflix(网飞)公司开源的一款基于REST的服务发现�
 ### 创建服务注册中心
 1）使用IDEA快速创建。
 选择工具框 File -> New -> Module -> Spring Initializr，依次填写每页信息。
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-1-step1.png)
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-1-step2.png)
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-1-step3.png)
 
 2）在SpringBoot启动类`EurekaServerApplication`上增加`@EnableEurekaServer`注解。
@@ -51,12 +54,15 @@ eureka.client.fetch-registry=false
 eureka.client.service-url.defaultZone=http://${eureka.instance.hostname}:${server.port}/eureka/
 
 ```
-4）启动应用，然后访问http://localhost:9001/，界面如下：
+4）启动应用，然后访问http://localhost:9001/ ，界面如下：
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-1-step4.png)
 
 ### 创建服务
 1） 使用IDEA快速创建。
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-2-step1.png)
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-2-step2.png)
 
 2）修改SpringBoot启动类，增加`@EnableDiscoveryClient`注解。
@@ -114,7 +120,9 @@ name=Akira
 age=18
 ```
 4）client启动后，访问http://localhost:9011/
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-2-step3.png)
 
 5）再次刷新Eureka Server，可看到EUREKA-CLIENT已注册到Server中。
+
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-2-step4.png)
