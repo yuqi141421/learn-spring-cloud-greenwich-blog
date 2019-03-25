@@ -1,0 +1,7 @@
+/*.iml
+/target
+/.idea
+/1-1-eureka-server/.mvn
+/1-1-eureka-server/*.cmd
+/1-1-eureka-server/*.md
+/1-1-eureka-server/*
