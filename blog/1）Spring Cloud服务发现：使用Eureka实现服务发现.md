@@ -126,3 +126,5 @@ age=18
 5）再次刷新Eureka Server，可看到EUREKA-CLIENT已注册到Server中。
 
 ![image](https://gitee.com/yuqihaha/learn-spring-cloud-greenwich-blog/raw/master/img/1-2-step4.png)
+
+
