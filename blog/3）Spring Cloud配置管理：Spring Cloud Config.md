@@ -114,7 +114,7 @@ eureka.client.serviceUrl.defaultZone=http://127.0.0.1:9001/eureka/
 
 这样应用成为了一个config client。
 
-2）新建==bootstrap.properties==，加入如下配置：
+2）新建**bootstrap.properties**，加入如下配置：
 
 ```
 # 应用名称
@@ -144,9 +144,9 @@ name=Akira
 age=18
 ```
 
-config client的配置文件需要放在==bootstrap.properties==中。
+config client的配置文件需要放在**bootstrap.properties**中。
 
-由于本例中使用注册中心来获取配置服务的地址，所以还需要将服务发现相关的配置放入==bootstrap.properties==中。
+由于本例中使用注册中心来获取配置服务的地址，所以还需要将服务发现相关的配置放入**bootstrap.properties**中。
 
 4）启动EurekaClientApplication后访问`http://localhost:9011/`，结果如下：
 >Akira-dev-master : 28
