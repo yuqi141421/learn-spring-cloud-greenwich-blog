@@ -46,7 +46,7 @@ push成功后，进入github对应仓库查看master和b1分支是否存在。
 
 这里勾选了Eureka Discovery，是为了将config server注册为一个服务。
 
-2）在SpringBoot启动类`ConfigServerApplication`上增加`@EnableEurekaServer`注解。
+2）在SpringBoot启动类`ConfigServerApplication`上增加`@EnableConfigServer`注解。
 
 ```
 package com.jk.learn.configserver;
